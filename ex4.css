@@ -1,0 +1,53 @@
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    /* We define the map here */
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    grid-area: header; 
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+h1 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
